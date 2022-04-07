@@ -1,9 +1,10 @@
 """
-M. Catherine Yopp
+M. Catherine Yopp - 6 April 2022
 MA 305 - Image Processing Final 
 
-This class is where the robot's thinking will take place 
-
+This is where the predetermined path is established and how 
+the robot knows what images to compare and which image is 
+"captured". 
 """
 import mo_brain as brain 
 
