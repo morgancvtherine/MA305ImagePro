@@ -1,3 +1,14 @@
+"""
+M. Catherine Yopp - 6 April 2022
+MA 305 - Image Processing Final 
+
+This class is how we know how far the robot has gone 
+and can visialize the path it is actually taking. This 
+is the emulation of a line following robot dispite 
+the lack of a physical robot. 
+
+"""
+
 import random as ran 
 from CapnCom import CapnCom
 import turtle as tu
