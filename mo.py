@@ -3,7 +3,7 @@ from CapnCom import CapnCom
 import turtle as tu
 import time as t 
 
-#Creating Mo  and the ship physically 
+#Creating Mo and the ship physically 
 tu.setup(852, 480)
 tu.bgpic("other_ship.gif")
 tu.Screen().addshape('mo2.gif')
@@ -15,7 +15,7 @@ tu.down()
 tu.showturtle()
 tu.color("#503630")
 tu.pensize(5)
-tu.speed(1)
+tu.speed(.75)
 
 #initializing the image index and choice
 images = [pics for pics in range(20)]
@@ -23,17 +23,13 @@ captured = ran.choice(images)
 s = 0 
 cc = CapnCom(captured, s)
 cc.setpath()
-path_end = False 
+path_end = False
 
 while path_end != True:
     
-    print(cc.cap)
-    print(images)
     images.remove(cc.cap)
     if cc.compare() == True:
-        print()
         path_end = cc.end()
-        print(cc.cap)
         images = [pics for pics in range(20)]
         cc.setcap(ran.choice(images))
         s += 1
@@ -61,7 +57,6 @@ tu.setpos(x = 0, y = -25)
 tu.down()
 tu.showturtle()
 tu.color("Grey")
-tu.write("Mo has cleaned the ship!", move=False, align="center", font=("Courier", 36, "bold"))
+tu.write("Mo has cleaned the ship!", move = False, align = "center", font = ("Courier", 36, "bold"))
 
 tu.done()
-
