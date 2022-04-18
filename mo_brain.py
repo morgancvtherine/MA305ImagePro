@@ -27,7 +27,7 @@ def match(cap, path):
     yes = False
     compare = [[0],[0]]
     try:
-        compare = cv.matchTemplate(images[cap], templates[path], cv.TM_CCOEFF_NORMED)
+        compare = cv.matchTemplate(images[path], templates[cap], cv.TM_CCOEFF_NORMED)
         
     except BaseException:    
         compare[0][0] = 0
