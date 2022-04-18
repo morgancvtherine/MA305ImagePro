@@ -19,7 +19,6 @@ for i in range(20):
     deg = i * 10 
     pic = "%ideg_line.png" %deg
     picture = cv.imread(pic)
-    picture.astype(np.float32)
     images.append(picture)
     templates.append(picture)
     
